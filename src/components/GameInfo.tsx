@@ -21,7 +21,7 @@ export function GameInfo({ drawOrder, pattern, mode, onDraw, onUndo, onReset }: 
    <>
         <div className="flex-1 flex flex-col items-center justify-center border-r-4 border-white">
           <span className="text-xl uppercase tracking-widest text-gray-400">Current Number</span>
-          <span className="text-[25svh] font-bold leading-none">
+          <span className="text-[25svh] font-bold leading-none whitespace-nowrap overflow-hidden">
             {currentNumber !== undefined ? formatBall(currentNumber) : '-'}
           </span>
         </div>

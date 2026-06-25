@@ -32,7 +32,7 @@ export function ControlPanel({ onDraw, onUndo, onReset, onNameChange, newPattern
         </button>
         <button
           className="px-4 py-2 border-2 border-white rounded font-bold hover:bg-white hover:text-black transition-colors"
-          onClick={() => onReset(newPattern)}
+          onClick={() => { if (window.confirm('Start a new game? This will clear all drawn numbers.')) onReset(newPattern) }}
         >
           New Game
         </button>

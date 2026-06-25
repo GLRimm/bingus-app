@@ -47,7 +47,7 @@ export function GameInfo({ drawOrder, pattern, mode, onDraw, onUndo, onReset }: 
                   key={offset}
                   className={`flex-1 flex items-center justify-center ${i < 2 ? 'border-r-4 border-white' : ''}`}
                 >
-                  <span className="text-[8svh] font-bold">
+                  <span className="text-[6svh] font-bold">
                     {num !== undefined ? formatBall(num) : ''}
                   </span>
                 </div>
